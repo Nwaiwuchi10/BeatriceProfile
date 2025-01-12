@@ -2,7 +2,7 @@ import React from "react";
 import { workExp } from "../../utils/data";
 import css from "./Work.module.scss";
 import { motion } from "framer-motion";
-import bet from "../../assets/bety.jpeg";
+import bet from "../../assets/hdc.jpeg";
 import {
   draw,
   fadeIn,

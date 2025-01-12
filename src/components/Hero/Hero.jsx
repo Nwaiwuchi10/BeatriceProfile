@@ -3,6 +3,8 @@ import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
 import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
 import whatsapp from "../../assets/whatsapp.png";
+import { IoCall } from "react-icons/io5";
+import { SiGmail } from "react-icons/si";
 import "./Hero.css";
 const Hero = () => {
   const phoneNumber = "+16462720134";
@@ -29,15 +31,17 @@ const Hero = () => {
             I'm Beatrice Charlotte Lee.
           </motion.span>
           <motion.span
+            // className={css.sec}
             className="secondaryText"
+            // style={{ width: "55%" }}
             variants={fadeIn("left", "tween", 0.4, 1)}
           >
-            I am a Financial Consultant
+            I am an investment advisor with over 15 years of experience,
             <br />
-            And also an investment advisor
+            dealing and investing in crypto currency and other related financial
+            markets.
           </motion.span>
         </div>
-
         <motion.div
           variants={fadeIn("up", "tween", 0.3, 1)}
           className={css.person}
@@ -45,18 +49,26 @@ const Hero = () => {
           <div className={css.personwhy}>
             <motion.img
               variants={slideIn("up", "tween", 0.5, 1.3)}
-              src="./het.png"
+              src="./gd.jpeg"
               // src="/bety.jpeg"
               alt=""
               className={css.personimgdiv}
             />
           </div>
         </motion.div>
+        <br />
+
+        <div className={css.number}>+16462720134</div>
+
+        {/* <br /> */}
 
         <a className={css.email} href="mailto:zainkeepscode@gmail.com">
+          {/* <span>
+            {" "}
+            <SiGmail style={{ color: "black" }} />
+          </span>{" "} */}
           beatricecharlottelee@gmail.com
         </a>
-
         <div className={css.lowerElements}>
           <motion.div
             variants={fadeIn("right", "tween", 0.3, 1)}

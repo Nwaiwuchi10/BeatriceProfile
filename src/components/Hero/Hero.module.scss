@@ -70,7 +70,7 @@
       margin-right: auto;
       margin-top: auto;
       margin-bottom: auto;
-      background-image: url("../splash.png");
+      // background-image: url("../splash.png");
       //   background-image: url("../../assets/hett.jpeg");
       background-repeat: no-repeat;
       background-size: 23rem;
@@ -86,21 +86,75 @@
     .personwhy {
       width: 100%;
       height: 100%;
+      display: flex;
+      position: relative;
+      left: 40px;
     }
     .personimgdiv {
-      width: 400px;
+      @media (max-width: $md) {
+        width: 450px;
+        height: auto;
+        object-fit: cover;
+        display: flex;
+        position: relative;
+        left: 0px;
+      }
+      @media (max-width: $sm) {
+        width: 450px;
+        height: auto;
+        object-fit: cover;
+        display: flex;
+        position: relative;
+        left: -50px;
+      }
+      width: 450px;
       height: auto;
       object-fit: cover;
+      display: flex;
+      position: relative;
+      left: 250px;
+      border-style: dotted;
+      border-color: rgb(187, 189, 189);
     }
-    .email {
-      @media (max-width: $sm) {
+    .number {
+      @media (max-width: $md) {
         position: relative;
-        display: none;
+        bottom: 48%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        // display: none;
       }
       position: absolute;
-      top: 50%;
+
+      // top: 50%;
+      left: 0;
+    }
+    .email {
+      @media (max-width: $md) {
+        position: relative;
+        margin-top: 10px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        // top: 90%;
+        // display: none;
+      }
+      position: absolute;
+
+      top: 56%;
       left: 0;
       color: orange;
     }
+    // .sec {
+    //   @media (max-width: $md) {
+    //     width: 100%;
+    //   }
+    //   width: 90%;
+    // }
   }
 }
