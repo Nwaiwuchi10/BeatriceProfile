@@ -10,12 +10,13 @@ import css from "./styles/App.module.scss";
 import ContactMe from "./components/Work/ContactMe";
 
 import Hero from "./components/Hero/Hero";
+import HeroSection from "./components/Hero/Heros";
 const App = () => {
   //don't forget to add font link in index.html
   return (
     <div className={`bg-primary ${css.container}`}>
       <Header />
-      <Hero />
+      <HeroSection />
       <Experties />
       <Work />
       <ContactMe />

@@ -36,10 +36,14 @@ const Hero = () => {
             // style={{ width: "55%" }}
             variants={fadeIn("left", "tween", 0.4, 1)}
           >
-            I am an investment advisor with over 15 years of experience,
+            Beatrice Charlotte Lee is an investment advisor with over 15 years
+            of experience,
             <br />
             dealing and investing in crypto currency and other related financial
             markets.
+            <br />
+            She is a very professional stock broker who executes financial
+            transactions to registered securities broker.
           </motion.span>
         </div>
         <motion.div
@@ -49,7 +53,7 @@ const Hero = () => {
           <div className={css.personwhy}>
             <motion.img
               variants={slideIn("up", "tween", 0.5, 1.3)}
-              src="./gd.jpeg"
+              src="./hdc.jpeg"
               // src="/bety.jpeg"
               alt=""
               className={css.personimgdiv}
@@ -62,7 +66,7 @@ const Hero = () => {
 
         {/* <br /> */}
 
-        <a className={css.email} href="mailto:zainkeepscode@gmail.com">
+        <a className={css.email} href="mailto:beatricecharlottelee@gmail.com">
           {/* <span>
             {" "}
             <SiGmail style={{ color: "black" }} />
